@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+.Footer {
+  height: 40vh;
+  width: 100vw;
+  background-color: #0d324d;
+  position: relative;
+}
+
+.Circle {
+  position: absolute;
+  height: 100vw;
+  width: 100vw;
+  bottom: -40vw;
+  right: -40vw;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(28, 141, 143, 0.43787937538296573) 0%,
+    rgba(13, 50, 77, 0) 56%
+  );
+  /* opacity: 0.6; */
+}
+
+.Row {
+  position: absolute;
+  margin: 2vw;
+}
+
+.Column {
+  float: left;
+  width: 32vw;
+}
+
+/* Clear floats after the columns */
+.Row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Column h1 {
+}
+
+.BoxedTitle {
+  position: absolute;
+  color: #11495e;
+  padding: 0.5rem;
+  background-color: #ffffff;
+}
